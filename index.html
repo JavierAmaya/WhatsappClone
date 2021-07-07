@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/c0d32cfc92.js" crossorigin="anonymous"></script>
+</head>
+<body class="body">
+    <nav class="navbar navbar-own">
+        <div class="container-fluid">
+                <a class="navbar-brand title-wpp" href=""><strong>Whatsapp</strong></a>
+                <form class="d-flex">
+                    <button class="btn btn-sm btn-user" type="button" id="profile-user"  data-toggle="collapse" data-target="#list-users" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-sort-down arrow-profile"></i></button>
+                </form>
+        </div>
+        <div class="w-100 mt-2">
+            <div class="collapse navbar-vertical sombra mt-0 p-1 div-users" id="list-users">
+                <p class="mb-0 ml-2"><small class="c-t">Seleccione un usuario</small></p>
+                <div class="container-fluid">
+                    <div class="row" id="listUsers">
+                    <!---aqui se ponen todos los usuarios-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-ul">
+        <ul class="nav nav-pills mb-3 color-ui ul-aling" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active c-txt ml-5" id="mensajesUsuario-tab" data-toggle="pill" href="#mensajesUsuario" role="tab" aria-controls="pills-home" aria-selected="true">CHATS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link c-txt" id="contactosUser-tab" data-toggle="pill" href="#contactosUser" role="tab" aria-controls="pills-profile" aria-selected="false">CONTACTS</a>
+            </li>
+        </ul>
+    </div>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="mensajesUsuario" role="tabpanel" aria-labelledby="mensajesUsuario-tab">
+            <!---aqui se van a mostrar los chats-->
+            
+        </div>
+        <div class="tab-pane fade" id="contactosUser" role="tabpanel" aria-labelledby="contactosUser-tab">
+            <!---aqui se van a mostrar los contactos-->
+            
+        </div>
+    </div>
+    <!---modal para agregar contacto-->
+    <div id="modal-nuevoContacto" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm ">
+            <div class="modal-content modal-contacto">
+                <div class="modal-header bb-0">
+                    <h5 class="modal-title c-w" id="exampleModalLongTitle">Agregar un nuevo contacto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="nombreContacto" class="c-w">Nombre</label>
+                            <select class="form-control" id="select-name">
+                                <!---valores de los nombres-->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="img-contacto" class="c-w">Imagen</label>
+                            <select class="form-control" id="select-img">
+                                <!---aqui se llenan los valores de las imagenes-->
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer bt-0">
+                    <button type="button" class="btn btn-secondary c-w" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary c-w" onclick="guardarContacto()">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/controlador.js"></script>
+</body>
+</html>

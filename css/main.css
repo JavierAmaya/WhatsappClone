@@ -1,0 +1,163 @@
+/*main css*/
+.body-chat{
+    background-color: #101D25;
+    background-image:url(../src/stickers/bg.jpg);
+}
+
+.body{
+    background-color: #101D25;
+}
+
+.navbar-own {
+    background-color:#1D2A32;
+    color: white;
+}
+
+.title-wpp{
+    color: #ACB5BC;
+}
+
+.img-profile{
+    width: 40px;
+    border-radius: 30px;
+}
+
+.arrow-profile{
+    color: white;
+    margin-left: 6px;
+}
+
+.btn-user{
+    background-color: #3D505E;
+}
+
+.color-ui{
+    background-color:#1D2A32 ;
+}
+
+.nav-pills .nav-link.active,
+.show>.nav-pills .nav-link{
+    background: #1D2A32  !important;
+    color: #19AB97;
+    border-bottom: solid;
+}
+
+.c-txt{
+    color: #ACB5BB;
+    font-weight:700;
+}
+.li {
+    list-style: none;
+}
+
+.c-t{
+    color: #ACB5BB;
+}
+
+.bb-s{
+    border-bottom: solid;
+    border-color: #253D4B;
+    border-bottom-width: thin;
+}
+
+.btn-new-contact{
+    background-color: #35bb64;
+    border-radius: 8px;
+    border-color: transparent;
+}
+
+.div-users{
+    background-color: #acb5bc33;
+    border-radius: 20px;
+}
+
+.img-profile-chat{
+    width: 50px;
+    border-radius: 30px;
+}
+
+.msg-env{
+    color: white;
+    background-color: #105148;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+.msg-rec{
+    color: white;
+    background-color: #3C3C3E;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-left: 8px;
+}
+
+.hora-msg{
+    text-align: right;
+    color: #ACB5BB;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding-bottom: 20px;
+    background-color: #1D2A32;
+    padding-top: 10px;
+}
+
+.input-msg{
+    border-radius: 10px;
+}
+
+.icon-sticker{
+    color:#ACB5BB ;
+}
+
+.btn-enviar{
+    background-color: #35bb64;
+    border-radius: 8px;
+    border-color: transparent;
+}
+
+.div-stickers{
+    margin: 10px;
+}
+
+.img-sticker{
+    width: 40px;
+}
+
+.borde-sticker{
+    border: solid;
+    border-color: #acb5bc33;
+    border-width: thin;
+}
+
+.img-preview-pf{
+    width: 55px;
+    border-radius: 30px;
+}
+
+.sticker-chat{
+    width: 70px;
+}
+
+.modal-contacto{
+    background-color:#1D2A32 ;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+.c-w{
+    color: white;
+}
+
+.bt-0{
+    border-top: 0;
+}
