@@ -2,6 +2,7 @@ const atras = ()=>{
     location.href = '/Examen_1_Expertos/'
 };
 
+//funcion para guardar los stickers en el local storage
 const setStickers = () => {
 
     let dataStickers = [];
@@ -14,6 +15,7 @@ const setStickers = () => {
 
 setStickers();
 
+//funcion para llenar el div de los stickers
 const getStickers = () => {
 
     let dataStickers = JSON.parse(localStorage.getItem('stickers'));
@@ -29,7 +31,7 @@ const getStickers = () => {
 
 getStickers();
 
-
+/// establecer la imagen del usuario logueado
 const setUserImg = () => {
     let dataUsers = JSON.parse(localStorage.getItem('usuarios'));
     let usuarioLogueado = localStorage.getItem('usuarioLogueado');
@@ -43,7 +45,7 @@ const setUserImg = () => {
     });
 };
 
-
+// funcion para enviar un sticker
 const enviarSticker = (stick) => {
 
     console.log('sticker Enviado',stick);
@@ -86,7 +88,7 @@ const enviarSticker = (stick) => {
     setSoloChat();
 };
 
-
+// enviar mensaje
 const enviarMensaje = () => {
 
     let date = new Date();
@@ -156,6 +158,7 @@ const enviarMensaje = () => {
 };
 
 
+/// renderizar un chat en especifico al darle click
 const setSoloChat = () =>{
 
     let idChat = localStorage.getItem('idChat');
@@ -232,7 +235,7 @@ const setSoloChat = () =>{
     }  
 }
 
-
+//establecer todo lo visual del chat seleccionado
 const setChat = () => {
 
     let idChat = localStorage.getItem('idChat');

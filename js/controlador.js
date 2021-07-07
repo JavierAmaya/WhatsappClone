@@ -1,5 +1,6 @@
 console.log('DOM cargado');
 
+// funcion para establecer la data a manejar en LocalStorage
 const setDataUsuarios = () => {
     
     let data = [
@@ -236,6 +237,7 @@ const setDataUsuarios = () => {
 
 setDataUsuarios();
 
+// funcion para establecer la data a manejar en LocalStorage
 const setDataConversaciones = ()=> {
 
     let dataConversacion12 = [
@@ -311,6 +313,8 @@ const setDataConversaciones = ()=> {
 
 setDataConversaciones();
 
+
+/// funcion para llenar la lista de usuarios 
 const setListUsers = () => {
 
     let dataUsers = JSON.parse(localStorage.getItem('usuarios'));
@@ -346,6 +350,7 @@ const nuevoContacto = () =>{
 };
 
 
+// guardar el contacto en localStorage
 const guardarContacto = () => {
     let dataUsuarios = JSON.parse(localStorage.getItem('usuarios'));
     let usuarioLogueado = localStorage.getItem('usuarioLogueado');
@@ -379,6 +384,7 @@ const guardarContacto = () => {
 };
 
 
+//obtener la lista de contactos del usuario logueado
 const getContactosUser = () => {
     let dataUsers = JSON.parse(localStorage.getItem('usuarios'));
     let userLogueado = JSON.parse(localStorage.getItem('usuarioLogueado'));
@@ -428,7 +434,7 @@ const setChat = (idChat,nameDest) => {
     location.href = '/Examen_1_Expertos/views/chat.html';
 };
 
-
+/// funcion para renderizar los mensajes que tiene el usuario logueado
 const getMensajesUser = () => {
     
     let dataUsers = JSON.parse(localStorage.getItem('usuarios'));
@@ -467,6 +473,7 @@ const getMensajesUser = () => {
 };
 
 
+// funcion para poner la imagen del usuario logueados
 const userLogueado = (id) => {
 
     let dataUsers = JSON.parse(localStorage.getItem('usuarios'));
@@ -488,6 +495,7 @@ const userLogueado = (id) => {
 };
 
 
+// funcion que se ejecuta al darle atras desde la vista chat.html
 const retornoDelChat = () => {
     if (localStorage.getItem('usuarioLogueado') != null) {
         userLogueado(localStorage.getItem('usuarioLogueado'));
